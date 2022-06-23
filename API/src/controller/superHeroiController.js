@@ -3,7 +3,7 @@ import { Router } from "express";
 import { inserirHeroi, ListarHerois } from "../repository/superHeroiRepository.js";
 const endpoints = Router();
 
-endpoints.get('/superHeroi', async (req, resp) => {
+endpoints.get('/superheroi', async (req, resp) => {
     try {
         const r = await ListarHerois();
         resp.send(r);
@@ -15,7 +15,7 @@ endpoints.get('/superHeroi', async (req, resp) => {
     }
 })
 
-endpoints.post('/superHeroi', async (req, resp) => {
+endpoints.post('/superheroi', async (req, resp) => {
     try {
         const heroi = req.body;
         const r = await inserirHeroi(heroi);

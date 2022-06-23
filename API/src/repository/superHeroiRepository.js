@@ -12,12 +12,12 @@ export async function ListarHerois () {
     return linhas;
 }
 
-export async function inserirHeroi () {
+export async function inserirHeroi (heroi) {
     const comando = `
         insert into tb_super_heroi (nm_super_heroi, ds_super_poderes, bt_voa)
             values (?, ?, ?)`
 
     const [resposta] = await con.query(comando, [heroi.nome, heroi.poderes, heroi.podevoar]);
     heroi.id = resposta.insertId;
-    return resposta;
+    return heroi;
 }
