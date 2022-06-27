@@ -6,6 +6,7 @@ import {cadastrar} from '../../api/heroi'
 
 
 export default function index(){
+    
     const [nome, setNome] = useState('');
     const [poderes, setPoderes] = useState('');
     const [podevoar, setPodevoar] = useState(false);

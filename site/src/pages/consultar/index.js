@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 
 
 export default function index(){
+    
     const [heroi, setHeroi] = useState([]);
 
     async function litartodos() {
