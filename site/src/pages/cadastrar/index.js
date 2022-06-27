@@ -1,11 +1,11 @@
 import './index.scss'
-import {useState} from 'react'
+import { useState } from 'react'
 
 import {cadastrar} from '../../api/heroi'
 
 
 
-export default function index(){
+export default function Index(){
     
     const [nome, setNome] = useState('');
     const [poderes, setPoderes] = useState('');

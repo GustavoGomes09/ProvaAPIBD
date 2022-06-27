@@ -3,7 +3,7 @@ import {listar} from '../../api/heroi'
 import { useEffect, useState } from 'react';
 
 
-export default function index(){
+export default function Index(){
     
     const [heroi, setHeroi] = useState([]);
 
